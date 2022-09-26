@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.roditelj{
+    display: grid;
+    grid-template-columns: 100px auto auto auto auto;
+    grid-template-rows: 100px;
+    position: fixed;
+    width: 100%;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    height: 80px;
+}
+.div1{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div2{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div3{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div4{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    font-style: italic;
+    color: #352a24;
+}
+
+.forma {
+    border-top: 25px solid gray;
+    border-bottom: 30px solid gray;
+    padding-left: 200px;
+}
+
+.dForm {
+    background-color: #d6bf94;
+    padding-top: 120px;
+}
+
+@media screen and (max-width: 400px) {
+    .roditelj{
+        position: absolute;
+        display: grid;
+        justify-content: start;
+        grid-template-columns: 100%;
+    }
+
+    .forma{
+        text-align: center;
+        margin-top: 400px;
+        padding-left: 0px;
+    }
+}

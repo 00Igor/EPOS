@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.roditelj{
+    display: grid;
+    grid-template-columns: 100px auto auto auto auto;
+    grid-template-rows: 100px;
+    position: fixed;
+    width: 100%;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    height: 80px;
+}
+.div1{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div2{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div3{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div4{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    font-style: italic;
+    color: #352a24;
+}
+
+.prvaSlika{
+    margin-top: 100px;
+    width: 100%;
+    height: 80vh;
+}
+
+.tekst{
+    text-align: center;
+    color: brown;
+}
+
+.roditeljPocetna{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    font-size: 25px;
+}
+
+.roditelj2{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.naziv{
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    text-align: center;
+}
+
+.mapa{
+    flex: 1;
+    text-align: center;
+    background-color: #967d5e;
+}
+.kontakt{
+    background-color: #967d5e;
+    align-content: center;
+    flex: 1;
+}
+.kontaktInfo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+.textarea{
+    vertical-align: middle;
+}
+.centerr{
+    text-align: center;
+}
+.forma{
+    text-align: center;
+}
+
+.divv{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 110px;
+    display: flex;
+    padding-right: 100px;
+}
+
+.div11{
+    flex: 2;
+    padding: 20px;
+    background-color: #d69f5c;
+}
+
+.div22{
+    flex: 1;
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+}
+
+@media screen and (max-width:400px){ 
+    .roditelj{
+        position: absolute;
+        display: grid;
+        justify-content: start;
+        grid-template-columns: 100%;
+    }
+    
+    .prvaSlika{
+        margin-top: 600px;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .tekst{
+        top: 160%;
+    }
+    
+    #mapa{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1100px) {
+    .div1{
+        background-color: #d69f5c;
+    }
+    .div2{
+        background-color: #d69f5c;
+    }
+    .div3{
+        background-color: #d69f5c;
+    }
+    .div4{
+        background-color: #d69f5c;
+    }
+
+    .kontakt{
+        background-color: #d69f5c;
+    }
+
+    #mapa{
+        width: 400px;
+        height: 400px;
+    }
+
+}

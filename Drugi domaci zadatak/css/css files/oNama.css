@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d6bf94;
+}
+.roditelj{
+    display: grid;
+    grid-template-columns: 100px auto auto auto auto;
+    grid-template-rows: 100px;
+    position: fixed;
+    width: 100%;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    height: 80px;
+}
+.div1{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div2{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div3{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+.div4{
+    padding: 30px;
+    border: 5px solid #352a24;
+    background-color: #967d5e;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    font-style: italic;
+    color: #352a24;
+}
+
+.oNama{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #352a24;
+    align-content:center;
+    font-size: 30px;
+    padding: 80px;
+}
+.naglaseniTekst{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #352a24;
+    padding: 5px;
+}
+
+.roditelj2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.naziv{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #352a24;
+    text-align: center;
+}
+
+.mapa{
+    flex: 1;
+    text-align: center;
+    background-color: #967d5e;
+}
+.kontakt{
+    background-color: #967d5e;
+    align-content: center;
+    flex: 1;
+}
+.kontaktInfo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+.textarea{
+    vertical-align: middle;
+}
+.centerr{
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+.forma{
+    text-align: center;
+}
+
+.vidplay{
+    border: 3px solid brown;
+    color: #352a24;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+    .roditelj{
+        position: absolute;
+        display: grid;
+        justify-content: start;
+        grid-template-columns: 100%;
+    }
+
+    .oNama{
+        margin-top: 400px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1100px) {
+    .div1{
+        background-color: #d69f5c;
+    }
+    .div2{
+        background-color: #d69f5c;
+    }
+    .div3{
+        background-color: #d69f5c;
+    }
+    .div4{
+        background-color: #d69f5c;
+    }
+
+    .centerr{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+    }
+    .kontakt{
+        background-color: #d69f5c;
+    }
+}

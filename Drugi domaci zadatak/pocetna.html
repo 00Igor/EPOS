@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="css/css files/pocetna.css">
+    <title> Poslastičarnica Vožd </title>
+</head>
+<body>
+  <div class = "roditelj">
+      <div class = "div5"> <img src = "img/rsz_1rsz_4logo.png" width="100" height="100"> </div>
+      <div class = "div1"> <a href = "pocetna.html" class = "link"> Pocetna </a> </div>
+      <div class = "div2"> <a href = "meni.html" class = "link"> Meni </a> </div>
+      <div class = "div3"> <a href = "porudzbina.html" class = "link"> Poručite online </a> </div>
+      <div class = "div4"> <a href = "onama.html" class = "link"> O nama </a></div>
+  </div>
+    
+    <img src= "img/poslasticarnica3.jpg" class = "prvaSlika">
+    <div class="tekst">
+        <h1> Poslastičarnica Vožd </h1>
+        <h2>
+        Tradicija je kontinuitet - povezati danas ono što je bilo juče sa onim što će doći. 
+        To je vizija, snaga i kvalitet da stvoriš nešto dobro u vremenu u kome živiš i koje dolazi.
+        </h2>
+        <br><br><br>
+    <div class="roditeljPocetna">
+      <div class="dete1">
+        <i class="naglaseniTekst"><b>Naša vizija</b></i><i> je da budemo glavni na tržištu
+        slatkiša u Beogradu, uz visok kvalitet i prepoznatljiv izgled i ukus naših
+        proizvoda, kao i pristupačne cene istih.</i>
+        </div>
+        <div class="dete2"> <i class="naglaseniTekst"><b>Naša misija</b></i><i> je da pružamo
+        svakodnevna mala zadovoljdstva našim potrošačima koje čine svi
+        sladokusci od 1 do 101. Naš moto je „Svaki dan kao slatki san, uz
+        poslastičarnicu „Vožd“.</i></div>
+        </div>
+    </div>
+
+    <div class="roditelj2">
+        <div class="mapa">
+           <h3 class="naziv">Naša lokacija:</h3>
+          <iframe
+            width="500"
+            height="450"
+            id="mapa"
+            src="https://maps.google.com/maps?q=vojvode%20stepe,%20beograd&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          
+          <br>
+        </div>
+        
+        <div class="kontakt">
+          <h3 class="naziv"> Kontakt: </h3>
+      
+          <div class="kontaktInfo">
+            Telefon: +381 61 252 96 13
+            <br><br>
+            Mejl: poslasticarnica.vozd@gmail.com
+            <br><br>
+            <form class="forma">
+              <h3 class="naziv">Direktno nam se obratite putem forme:</h3>
+              <label for="ime">Vaše ime:</label>
+              <input type="text" id="ime" name="ime" size="30" placeholder="Vaše ime(opciono)">
+              <br> <br>
+              <label for="prezime">Vaše prezime:</label>
+              <input type="text" id="prezime" name="prezime" size="30" placeholder="Vaše prezime(opciono)">
+              <br> <br>
+              <label for="email">Vaš e-mail:</label>
+              <input type="text" id="email" name="email" size="30" placeholder="Vaš e-mail(opciono)">
+              <br> <br>
+              <label for="textarea">Vaša poruka:</label>
+              <textarea class ="textareaforma" cols="30" rows="10" placeholder="Vaša poruka za nas"></textarea>
+              <br>
+              <label for = "ocena"> Ocenite nas: </label>
+              <input type = "number" name = "ocena" min = "1" max = "5" value = "5" class = "ocena">
+              <br><br>
+              <input type="submit" value="Pošalji" id = "potvrdi">
+              <input type="reset" value="Reset">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script src = "js/pocetna.js"></script>
+
+</body>
+</html>

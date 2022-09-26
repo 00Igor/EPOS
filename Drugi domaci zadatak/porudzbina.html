@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/css files/porudzbina.css">
+    <title> Porudžbina - Poslastičarnica Vožd</title>
+</head>
+<body>
+
+    <div class = "roditelj">
+        <div class = "div5"> <img src = "img/rsz_1rsz_4logo.png"> </div>
+        <div class = "div1"> <a href = "pocetna.html" class = "link"> Pocetna </a> </div>
+        <div class = "div2"> <a href = "meni.html" class = "link"> Meni </a> </div>
+        <div class = "div3"> <a href = "porudzbina.html" class = "link"> Poručite online </a> </div>
+        <div class = "div4"> <a href = "onama.html" class = "link"> O nama </a></div>
+    </div>
+
+    <div class = "dForm">
+    <form class = "forma" id = "forma">
+        <h2> Vaša porudžbina: </h2>
+        Molimo unesite Vaše podatke:<br><br>
+        <label for = "ime"> Ime:* </label><br>
+        <input type = "text" id = "ime" name = "ime" size = "30" placeholder = "Ime" required>
+        <br><br>
+        <label for = "prezime"> Prezime:* </label><br>
+        <input type = "text" id = "prezime" name = "prezime" size = "30" required placeholder = "Prezime">
+        <br><br>
+        <label for = "ulica"> Naziv i broj ulice:* </label> <br>
+        <input type = "text" id = "ulica" name = "ulica" size = "30"
+        placeholder = "Naziv ulice" required>
+        <input type = "text" id = "brojUlice" name = "brojUlice" 
+        placeholder="broj" size = "5" required> 
+        <br><br>
+        <label for = "broj"> Broj telefona:* </label> <br>
+        <input type = "text" id = "telefon" name = "broj" maxlength = "10" size = "30" 
+        placeholder = "Telefon" required> 
+        <br><br>
+        <label for = "email"> Email: </label> <br>
+        <input type="email" id="email" name="email" size = "30"> 
+        <br><br>
+        <label for = "datum"> Kada biste da Vam stigne porudžbina i u koje vreme
+            (AM - pre podne, PM - posle podne):*
+             </label> <br>
+        <input type = "date" id = "datum" name = "datum">
+        <br><br><br>
+        * - Obavezno polje 
+        <br>
+        <h3> Molimo unesite koje proizvode želite da kupite i u kojoj količini: </h3>
+        <table>
+            <tr>
+                <td rowspan = "4"> <h3> Sitni kolači(u kg): </h3> </td>
+                <td> Padobranci </td>
+                <td>
+                    <input type = "number" id = "padobranci" name = "padobranci"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Kesten kuglice </td>
+                <td>
+                    <input type = "number" name = "kesten" id = "kesten"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Plazma kuglice </td>
+                <td>
+                    <input type = "number" name = "plazma" id = "plazma"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Vanilice </td>
+                <td>
+                    <input type = "number" name = "vanilice" id = "vanilice"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr><td colspan = "3"></td></tr>
+            <tr><td colspan = "3"></td></tr>
+            <tr>
+                <td rowspan = "5"> <h3> Voćni sladoledi - kugla: </h3> </td>
+                <td> Šumsko voće </td>
+                <td>
+                    <input type = "number" id = "sumsko" name = "sumsko"
+                    value = "0" min = "0" max = "20">
+                </td>
+            </tr>
+            <tr>
+                <td> Malina </td>
+                <td>
+                    <input type = "number" name = "kesten" id = "malina"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Banana </td>
+                <td>
+                    <input type = "number" name = "plazma" id = "banana"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Čokolada </td>
+                <td>
+                    <input type = "number" name = "vanilice" id = "cokolada"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Jagoda </td>
+                <td>
+                    <input type = "number" name = "vanilice" id = "jagoda"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr><td colspan = "3"></td></tr>
+            <tr><td colspan = "3"></td></tr>
+            <tr>
+                <td rowspan = "5"> <h3> Torte(u kg): </h3> </td>
+                <td> Švarcvald </td>
+                <td>
+                    <input type = "number" id = "svarcvald" name = "svarcvald"
+                    value = "0" min = "0" max = "20">
+                </td>
+            </tr>
+            <tr>
+                <td> Saher torta </td>
+                <td>
+                    <input type = "number" name = "saher" id = "saher"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Šeherezada </td>
+                <td>
+                    <input type = "number" name = "plazma" id = "seherezada"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Reforma </td>
+                <td>
+                    <input type = "number" name = "vanilice" id = "reforma"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+            <tr>
+                <td> Čizkejk </td>
+                <td>
+                    <input type = "number" name = "vanilice" id = "cizkejk"
+                    value = "0" min = "0" max = "20" >
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type = "button" value = "Izračunaj cenu:" id = "izracunaj">
+        <input type = "text" id = "cena" readonly="readonly">
+        <p id = "cenap"></p>
+        <br><br>
+        <input type = "button" value = "Potvrdi" id = "potvrdi">
+        <input type = "reset" value = "Otkaži">
+    </form>
+    </div>
+
+    <script src="js/poruci.js"></script>
+
+</body>
+</html>
